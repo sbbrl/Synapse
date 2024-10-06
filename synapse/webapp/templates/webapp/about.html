@@ -1,0 +1,33 @@
+{% load django_browser_reload %}
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About the developers">
+    <meta name="author" content="Subibhu Baral">
+    <meta name="author" content="Subigya Baral">
+    <meta name="author" content="Nabin Khadka">
+    <meta name="generator" content="GitHub Codespaces">
+    <meta name="theme-color" content="#708bc1">
+    <title>{% block title %}{{ title }} | About the developers{% endblock %}</title>
+    <h1 style="text-align: center;">About the developers</h1>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+
+<body>
+    <div class="App">
+        <header class="App-header">
+            <div class="image-container">
+                    <img src="{% static 'images/bhu.jpg' %}" alt="Subibhu" class="side-by-side" style="width: 200px; height: 200px;">
+                    <img src="{% static 'images/subi.jpg' %}" alt="Subigya" class="side-by-side" style="width: 200px; height: 200px;">
+                    <img src="{% static 'images/nabin.jpg' %}" alt="Nabin" class="side-by-side" style="width: 200px; height: 200px;">
+                <p>Subibhu Baral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subigya Baral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nabin Khadka</p>
+                </div>
+        </header>
+    </div>
+</body>
+</html>
