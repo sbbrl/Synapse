@@ -1,62 +1,8 @@
-#Make this code use the base.html template by extending it.
-
-#synapse/webapp/templates/webapp/index.html
 {% extends 'webapp/base.html' %}
 
 {% block content %}
     <h1>Hello this is index.html!</h1>
 {% endblock %}
-
-#synapse/webapp/templates/webapp/base.html
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Antarikshya</title>
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-    <footer>
-        <p>&copy; 2024 Antarikshya</p>
-    </footer>
-</body>
-</html>
-#The index.html now uses the base.html template. The content of the index.html is placed in the content block of the base.html template.
-
-#The index.html template now extends the base.html template.
-
-#The content block in the base.html template is used to render the content of the index.html template.
-
-#This way, the index.html template inherits the header, footer, and styling from the base.html template.
-
-#In the browser, the index.html page will have the same header, footer, and styling as the other pages that extend the base.html template.
-
-#The content of the index.html will be displayed in the main content area of the page.
-
-#This approach helps in maintaining consistency across multiple pages of a web application.
-#synapse/webapp/templates/webapp/index.html
-{% extends 'webapp/base.html' %}
-
-{% block content %}
-    <h1>Hello this is index.html!</h1>
-{% endblock %}
-
-#synapse/webapp/templates/webapp/base.html
 {% load static %}
 
 <!DOCTYPE html>
