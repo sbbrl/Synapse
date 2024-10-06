@@ -28,3 +28,40 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Antarikshya</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'webapp/css/alt.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <button>Explore</button>
+            <img src="{% static 'images/Milky_way.webp' %}" alt="Milky Way from Earth">
+        </section>
+        <section class="description">
+            <h1>Welcome to Space View</h1>
+            <p>Explore the stars and the Milky Way galaxy from the perspective of various exoplanets. Our website provides a unique view of the universe, allowing you to see the cosmos like never before.</p>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 Antarikshya</p>
+</footer>
+</html>

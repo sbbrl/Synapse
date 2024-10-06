@@ -15,7 +15,6 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="explore.html">Explore</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -23,15 +22,18 @@
     </header>
     <main>
         <section class="hero">
-            <img src="{% static 'images/milkyway1.webp' %}" alt="Milky Way from Earth">
-        </section>
-        <section class="description">
-            <h1>Welcome to Space View</h1>
-            <p>Explore the stars and the Milky Way galaxy from the perspective of various exoplanets. Our website provides a unique view of the universe, allowing you to see the cosmos like never before.</p>
+            <div class="hero-content">
+                <button>Explore</button>
+                <h1>Welcome to Space View</h1>
+                <p>Explore the stars and the Milky Way galaxy from the perspective of various exoplanets. Our website provides a unique view of the universe, allowing you to see the cosmos like never before.</p>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'images/Milky_way.webp' %}" alt="Milky Way from Earth">
+            </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Antarikshya</p>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2024 Antarikshya</p>
-</footer>
 </html>
