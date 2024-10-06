@@ -1,0 +1,30 @@
+<!-- base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Antarikshya</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                {% comment %} <li><a href="{% url 'index' %}">Home</a></li> {% endcomment %}
+                {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
+                {% comment %} <li><a href="{% url 'contact' %}">Contact</a></li> {% endcomment %}
+                <li>Hello</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Antarikshya</p>
+    </footer>
+</body>
+</html>
