@@ -14,16 +14,16 @@
         </div>
         <nav>
             <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <div class="hero-content">
-                <button>Explore</button>
+                <button><a href="explore">Explore</a></button>
                 <h1>Welcome to Space View</h1>
                 <p>Explore the stars and the Milky Way galaxy from the perspective of various exoplanets. Our website provides a unique view of the universe, allowing you to see the cosmos like never before.</p>
             </div>

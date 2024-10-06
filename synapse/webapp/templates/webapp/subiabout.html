@@ -8,26 +8,94 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="About the developers">
-    <meta name="author" content="Subibhu Baral">
-    <meta name="author" content="Subigya Baral">
-    <meta name="author" content="Nabin Khadka">
+    <meta name="author" content="Subibhu Baral, Subigya Baral, Nabin Khadka">
     <meta name="generator" content="GitHub Codespaces">
     <meta name="theme-color" content="#708bc1">
-    <title>{% block title %}{{ title }} | About the developers{% endblock %}</title>
-    <h1 style="text-align: center;">About the developers</h1>
-    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>{% block title %}About the Developers{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'webapp/css/alt.css' %}">
 </head>
 
 <body>
-    <div class="App">
-        <header class="App-header">
-            <div class="image-container">
-                    <img src="{% static 'images/bhu.jpg' %}" alt="Subibhu" class="side-by-side" style="width: 200px; height: 200px;">
-                    <img src="{% static 'images/subi.jpg' %}" alt="Subigya" class="side-by-side" style="width: 200px; height: 200px;">
-                    <img src="{% static 'images/nabin.jpg' %}" alt="Nabin" class="side-by-side" style="width: 200px; height: 200px;">
-                <p>Subibhu Baral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subigya Baral&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nabin Khadka</p>
-                </div>
-        </header>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h1 style="text-align: center;">About the Developers</h1>
+            <div class="image-container" style="text-align: center;">
+                <img src="{% static 'images/bhu.jpg' %}" alt="Subibhu" class="side-by-side" style="width: 200px; height: 200px; border-radius: 50%;">
+                <img src="{% static 'images/subi.jpg' %}" alt="Subigya" class="side-by-side" style="width: 200px; height: 200px; border-radius: 50%;">
+                <img src="{% static 'images/nabin.jpg' %}" alt="Nabin" class="side-by-side" style="width: 200px; height: 200px; border-radius: 50%;">
+            </div>
+            <p style="text-align: center; margin-top: 20px;">
+                Subibhu Baral &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Subigya Baral &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Nabin Khadka
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Antarikshya</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Antarikshya</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'webapp/css/home.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'images/logo.jpg' %}" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>About Us</h1>
+            <p>Welcome to Antarikshya! We are a team of three passionate individuals dedicated to exploring the wonders of the universe. Our goal is to provide a unique perspective on the cosmos through innovative technology and engaging content.</p>
+        </section>
+        <section>
+            <h2>Meet the Team</h2>
+            <div>
+                <h3>Person 1: Alice</h3>
+                <p>Alice is an astrophysicist with a passion for research and education. She loves to share her knowledge of the universe and inspire others to explore.</p>
+            </div>
+            <div>
+                <h3>Person 2: Bob</h3>
+                <p>Bob is a software engineer who brings our ideas to life through technology. His expertise in programming helps create immersive experiences for our users.</p>
+            </div>
+            <div>
+                <h3>Person 3: Charlie</h3>
+                <p>Charlie is a graphic designer with a keen eye for aesthetics. He ensures our platform is visually appealing and user-friendly.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Antarikshya</p>
+    </footer>
 </body>
 </html>
