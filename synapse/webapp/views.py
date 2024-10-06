@@ -6,7 +6,7 @@ from django.http import HttpResponse
 # def index(request):
 #     return HttpResponse("Hello World!")
 def index(request):
-    return render(request,'webapp/index.html')
+    return render(request,'webapp/home.html')
 
 # def about(request):
 #     return render(request,'webapp/about.html')
