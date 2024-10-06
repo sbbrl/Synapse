@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-l)^w-p+_$6e&0zm8l=n*e9ouh5)*byw-h3**_juwwfrm^$&h=3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['antarikshya.earth']
+ALLOWED_HOSTS = ['antarikshya.earth','127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webapp'
 ]
 
 MIDDLEWARE = [
